@@ -4,7 +4,6 @@ import java.io.File;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        // Шлях до файлу відносно кореня проєкту IDEA
         File sourceFile = new File("src/TestModule.java");
         long lastModified = 0;
 

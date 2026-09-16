@@ -16,7 +16,6 @@ public class CustomClassLoader extends ClassLoader {
 
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
-        // Оскільки IDEA тримає файли в src/, вказуємо відповідний шлях
         File file = new File("src/" + name + ".class");
 
         if (!file.exists()) {
